@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Glowy Skin & Co. | 護膚顧問</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <!-- 頂部 Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-illustration">
+                        <div class="cute-bottle">
+                            <div class="bottle-body"></div>
+                            <div class="bottle-cap"></div>
+                            <div class="bottle-face">
+                                <div class="eye eye-left"></div>
+                                <div class="eye eye-right"></div>
+                                <div class="smile"></div>
+                            </div>
+                        </div>
+                        <div class="cute-bear">
+                            <div class="bear-face">
+                                <div class="ear ear-left"></div>
+                                <div class="ear ear-right"></div>
+                                <div class="bear-eye eye-left"></div>
+                                <div class="bear-eye eye-right"></div>
+                                <div class="bear-nose"></div>
+                                <div class="bear-mouth"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="app-title">
+                        <span class="title-line1">Glowy</span>
+                        <span class="title-line2">Skin & Co.</span>
+                    </h1>
+                </div>
+                <button class="notification-btn" id="notificationBtn">
+                    <span class="bell-icon">🔔</span>
+                    <span class="notification-dot"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- 主內容區 -->
+        <main class="main-content">
+            <!-- 歡迎橫幅 -->
+            <section class="welcome-banner">
+                <div class="banner-content">
+                    <h2 class="welcome-text">找到你的完美護膚 💕</h2>
+                    <p class="welcome-subtext">讓我們幫你配對最適合的產品</p>
+                </div>
+                <div class="banner-illustration">
+                    <div class="cute-products">
+                        <div class="mini-bottle bottle-1"></div>
+                        <div class="mini-jar jar-1"></div>
+                        <div class="mini-tube tube-1"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 快速測驗按鈕 -->
+            <section class="quick-quiz-section">
+                <button class="quiz-btn" id="quizBtn">
+                    <span class="quiz-icon">✨</span>
+                    <span class="quiz-text">開始肌膚測驗</span>
+                    <span class="quiz-subtext">30 秒找到你的命定護膚品</span>
+                </button>
+            </section>
+
+            <!-- 分類導航 -->
+            <section class="categories-section">
+                <h3 class="section-title">探索分類</h3>
+                <div class="categories-grid">
+                    <div class="category-card" data-category="quiz">
+                        <div class="category-icon quiz-icon">✨</div>
+                        <span class="category-name">肌膚測驗</span>
+                    </div>
+                    <div class="category-card" data-category="routine">
+                        <div class="category-icon routine-icon">📅</div>
+                        <span class="category-name">護膚流程</span>
+                    </div>
+                    <div class="category-card" data-category="products">
+                        <div class="category-icon products-icon">🛍️</div>
+                        <span class="category-name">所有產品</span>
+                    </div>
+                    <div class="category-card" data-category="tips">
+                        <div class="category-icon tips-icon">💡</div>
+                        <span class="category-name">護膚貼士</span>
+                    </div>
+                    <div class="category-card" data-category="about">
+                        <div class="category-icon about-icon">ℹ️</div>
+                        <span class="category-name">關於我們</span>
+                    </div>
+                    <div class="category-card" data-category="contact">
+                        <div class="category-icon contact-icon">💬</div>
+                        <span class="category-name">聯絡我們</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 精選推薦 -->
+            <section class="featured-section">
+                <h3 class="section-title">Skin1004 熱銷產品</h3>
+                <div class="featured-products">
+                    <div class="featured-card" data-product="cica-ampoule">
+                        <div class="featured-image">
+                            <div class="mini-product ampoule"></div>
+                        </div>
+                        <div class="featured-info">
+                            <h4 class="featured-name">積雪草安瓶</h4>
+                            <p class="featured-desc">修護精華</p>
+                            <div class="featured-price">$87</div>
+                        </div>
+                    </div>
+                    <div class="featured-card" data-product="cica-sunscreen">
+                        <div class="featured-image">
+                            <div class="mini-product sunscreen"></div>
+                        </div>
+                        <div class="featured-info">
+                            <h4 class="featured-name">水感防曬</h4>
+                            <p class="featured-desc">SPF50+</p>
+                            <div class="featured-price">$101</div>
+                        </div>
+                    </div>
+                    <div class="featured-card" data-product="cica-soothing">
+                        <div class="featured-image">
+                            <div class="mini-product cream"></div>
+                        </div>
+                        <div class="featured-info">
+                            <h4 class="featured-name">舒緩修護霜</h4>
+                            <p class="featured-desc">深層滋潤</p>
+                            <div class="featured-price">$95</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 底部導航欄 -->
+        <nav class="bottom-nav">
+            <button class="nav-item active" data-tab="home">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" class="icon-svg">
+                        <path d="M12 3L4 9v12h5v-7h6v7h5V9z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="nav-label">首頁</span>
+            </button>
+            
+            <button class="nav-item" data-tab="quiz">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" class="icon-svg">
+                        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="nav-label">測驗</span>
+            </button>
+            
+            <button class="nav-item" data-tab="products">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" class="icon-svg">
+                        <path d="M20 4H4v2h16v2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 14H4V8h16v11z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="nav-label">產品</span>
+            </button>
+            
+            <button class="nav-item" data-tab="profile">
+                <div class="nav-icon">
+                    <svg viewBox="0 0 24 24" class="icon-svg">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <span class="nav-label">我的</span>
+            </button>
+        </nav>
+
+        <!-- 測驗頁面容器 -->
+        <div id="quiz-page" class="page-container" style="display: none;">
+            <div class="page-header">
+                <button class="back-btn" onclick="closeQuizPage()">← 返回</button>
+                <span class="page-title">肌膚測驗</span>
+                <div style="width: 60px;"></div>
+            </div>
+            <div id="quiz-content"></div>
+        </div>
+
+        <!-- 產品詳情頁面 -->
+        <div id="product-page" class="page-container" style="display: none;">
+            <div class="page-header">
+                <button class="back-btn" onclick="closeProductPage()">← 返回</button>
+                <span class="page-title">產品詳情</span>
+                <div style="width: 60px;"></div>
+            </div>
+            <div id="product-content"></div>
+        </div>
+
+        <!-- 護膚流程頁面 -->
+        <div id="routine-page" class="page-container" style="display: none;">
+            <div class="page-header">
+                <button class="back-btn" onclick="closeRoutinePage()">← 返回</button>
+                <span class="page-title">護膚流程</span>
+                <div style="width: 60px;"></div>
+            </div>
+            <div id="routine-content"></div>
+        </div>
+    </div>
+
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
